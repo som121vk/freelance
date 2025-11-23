@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard - FlexWork Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">FlexWork</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📁</span>
+                    <span class="nav-text">My Projects</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">➕</span>
+                    <span class="nav-text">New Project</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-text">Messages</span>
+                    <span class="badge">3</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💰</span>
+                    <span class="nav-text">Payments</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div class="user-info">
+                        <div class="user-name">John Doe</div>
+                        <div class="user-email">john@example.com</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1 class="page-title">Dashboard</h1>
+                    <p class="page-subtitle">Welcome back, John! 👋</p>
+                </div>
+                <div class="header-right">
+                    <button class="btn-primary" onclick="openNewProjectModal()">
+                        ➕ New Project
+                    </button>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">📁
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-value">5</div>
+                            <div class="stat-change positive">+2 this month</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">✅
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Completed</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-change positive">+4 this month</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">💰
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Total Spent</div>
+                            <div class="stat-value">₹2.5L</div>
+                            <div class="stat-change">This year</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">⭐
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Avg. Rating</div>
+                            <div class="stat-value">4.8</div>
+                            <div class="stat-change">Out of 5.0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Projects -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2 class="section-title">Active Projects</h2>
+                        <a href="#" class="section-link">View All →</a>
+                    </div>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <div class="project-icon">🌐</div>
+                            <div class="project-info">
+                                <h3 class="project-title">E-Commerce Website</h3>
+                                <p class="project-meta">Web Development • Started May 15, 2025</p>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <span class="progress-text">75%</span>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge in-progress">In Progress</span>
+                            </div>
+                            <button class="btn-icon">→</button>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-icon">📱</div>
+                            <div class="project-info">
+                                <h3 class="project-title">Mobile App Redesign</h3>
+                                <p class="project-meta">UI/UX Design • Started May 10, 2025</p>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%;"></div>
+                                </div>
+                                <span class="progress-text">45%</span>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge in-progress">In Progress</span>
+                            </div>
+                            <button class="btn-icon">→</button>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-icon">🎬</div>
+                            <div class="project-info">
+                                <h3 class="project-title">Product Launch Video</h3>
+                                <p class="project-meta">Video Editing • Started May 20, 2025</p>
+                            </div>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%;"></div>
+                                </div>
+                                <span class="progress-text">90%</span>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge review">In Review</span>
+                            </div>
+                            <button class="btn-icon">→</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity & Messages -->
+                <div class="two-column-grid">
+                    <div class="section-card">
+                        <div class="section-header">
+                            <h2 class="section-title">Recent Activity</h2>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">✅</div>
+                                <div class="activity-content">
+                                    <p class="activity-text"><strong>Logo Design</strong> project completed</p>
+                                    <span class="activity-time">2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">💬</div>
+                                <div class="activity-content">
+                                    <p class="activity-text">New message from <strong>Sarah (Designer)</strong></p>
+                                    <span class="activity-time">5 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">💰</div>
+                                <div class="activity-content">
+                                    <p class="activity-text">Payment of <strong>₹25,000</strong> processed</p>
+                                    <span class="activity-time">1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">📁</div>
+                                <div class="activity-content">
+                                    <p class="activity-text"><strong>Brand Guidelines</strong> files uploaded</p>
+                                    <span class="activity-time">2 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <div class="section-header">
+                            <h2 class="section-title">Messages</h2>
+                            <a href="#" class="section-link">View All →</a>
+                        </div>
+                        <div class="messages-list">
+                            <div class="message-item unread">
+                                <div class="message-avatar">SK</div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-name">Sarah Khan</span>
+                                        <span class="message-time">10m</span>
+                                    </div>
+                                    <p class="message-preview">I've updated the design mockups. Please review...</p>
+                                </div>
+                            </div>
+                            <div class="message-item">
+                                <div class="message-avatar">RP</div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-name">Rahul Patel</span>
+                                        <span class="message-time">2h</span>
+                                    </div>
+                                    <p class="message-preview">The first milestone is ready for testing...</p>
+                                </div>
+                            </div>
+                            <div class="message-item">
+                                <div class="message-avatar">AM</div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-name">Amit Mehta</span>
+                                        <span class="message-time">1d</span>
+                                    </div>
+                                    <p class="message-preview">Thanks for the feedback! I'll make the changes...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
